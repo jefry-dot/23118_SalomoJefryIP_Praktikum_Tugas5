@@ -4,14 +4,14 @@ public class IndeksMassaTubuh {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Input berat badan dan tinggi badan
+ 
         System.out.print("Masukkan berat badan (kg): ");
         double beratBadan = input.nextDouble();
 
         System.out.print("Masukkan tinggi badan (m): ");
         double tinggiBadan = input.nextDouble();
 
-        // Hitung IMT
+
         double imt = beratBadan / (tinggiBadan * tinggiBadan);
 
         // Menentukan kategori berdasarkan nilai IMT
@@ -28,7 +28,7 @@ public class IndeksMassaTubuh {
             kategori = "Sangat Gemuk";
         }
 
-        // Tampilkan hasil
+ 
         System.out.printf("Nilai IMT: %.2f%n", imt);
         System.out.println("Kategori: " + kategori);
     }
